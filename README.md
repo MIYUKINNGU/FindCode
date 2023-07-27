@@ -3,4 +3,4 @@
 
 ## Special thanks
 - オーキドせんせい研究者
-- - (Twitter/X)[https://twitter.com/vs_prof_oak]
+- - [Twitter/X](https://twitter.com/vs_prof_oak)
