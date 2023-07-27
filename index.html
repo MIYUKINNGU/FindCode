@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>変換</title>
+        <style>
+            th, td{
+                width: 10em;
+                border: 2px solid #000;
+            }
+            table {
+                border: 2px solid #000;
+                border-radius: 3px;
+                border-collapse:collapse;
+            }
+            input {
+                outline: none;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>内部番号で検索</h2>
+        <table id="A">
+            <tr>
+                <th>内部番号</th>
+                <th>対応文字</th>
+                <th>ポケモン</th>
+                <th>わざ</th>
+                <th>どうぐ</th>
+                <th>マップ</th>
+                <th>プログラム</th>
+                <th>2Byte命令</th>
+            </tr>
+            <tr>
+                <td><input type="text" value="" id="NUMINPUT" placeholder="内部番号を16進数で入力"></td>
+                <td id="Achar"></td>
+                <td id="Apokemon"></td>
+                <td id="Askill"></td>
+                <td id="Aitem"></td>
+                <td id="Amap"></td>
+                <td id="Acode"></td>
+                <td id="Aasmcode"></td>
+            </tr>
+        </table>
+        <h2>文字で検索(非推奨)</h2>
+        <table id="B">
+            <tr>
+                <th>対応文字</th>
+                <th>内部番号</th>
+                <th>ポケモン</th>
+                <th>わざ</th>
+                <th>どうぐ</th>
+                <th>マップ</th>
+                <th>プログラム</th>
+                <th>2Byte命令</th>
+            </tr>
+            <tr>
+                <td><input type="text" value="" id="CHARINPUT" placeholder="検索文字を入力"></td>
+                <td id="Bnum"></td>
+                <td id="Bpokemon"></td>
+                <td id="Bskill"></td>
+                <td id="Bitem"></td>
+                <td id="Bmap"></td>
+                <td id="Bcode"></td>
+                <td id="Basmcode"></td>
+            </tr>
+        </table>
+        <script src="./index.js"></script>
+    </body>
+</html>
