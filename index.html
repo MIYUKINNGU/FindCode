@@ -13,7 +13,7 @@
                 border-radius: 3px;
                 border-collapse:collapse;
             }
-            input {
+            input[type="text"] {
                 outline: none;
                 border: none;
             }
@@ -21,51 +21,57 @@
     </head>
     <body>
         <h2>内部番号で検索</h2>
-        <table id="A">
-            <tr>
-                <th>内部番号</th>
-                <th>対応文字</th>
-                <th>ポケモン</th>
-                <th>わざ</th>
-                <th>どうぐ</th>
-                <th>マップ</th>
-                <th>プログラム</th>
-                <th>2Byte命令</th>
-            </tr>
-            <tr>
-                <td><input type="text" value="" id="NUMINPUT" placeholder="内部番号を16進数で入力"></td>
-                <td id="Achar"></td>
-                <td id="Apokemon"></td>
-                <td id="Askill"></td>
-                <td id="Aitem"></td>
-                <td id="Amap"></td>
-                <td id="Acode"></td>
-                <td id="Aasmcode"></td>
-            </tr>
+        <table>
+            <tbody id="A">
+                <tr>
+                    <th>内部番号</th>
+                    <th>対応文字</th>
+                    <th>ポケモン</th>
+                    <th>わざ</th>
+                    <th>どうぐ</th>
+                    <th>マップ</th>
+                    <th>プログラム</th>
+                    <th>2Byte命令</th>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="0NUMINPUT" placeholder="内部番号を16進数で入力"></td>
+                    <td id="0Achar"></td>
+                    <td id="0Apokemon"></td>
+                    <td id="0Askill"></td>
+                    <td id="0Aitem"></td>
+                    <td id="0Amap"></td>
+                    <td id="0Acode"></td>
+                    <td id="0Aasmcode"></td>
+                </tr>
+            </tbody>
         </table>
+        <input type="button" value="Add" onclick="AddListA()">
         <h2>文字で検索(非推奨)</h2>
-        <table id="B">
-            <tr>
-                <th>対応文字</th>
-                <th>内部番号</th>
-                <th>ポケモン</th>
-                <th>わざ</th>
-                <th>どうぐ</th>
-                <th>マップ</th>
-                <th>プログラム</th>
-                <th>2Byte命令</th>
-            </tr>
-            <tr>
-                <td><input type="text" value="" id="CHARINPUT" placeholder="検索文字を入力"></td>
-                <td id="Bnum"></td>
-                <td id="Bpokemon"></td>
-                <td id="Bskill"></td>
-                <td id="Bitem"></td>
-                <td id="Bmap"></td>
-                <td id="Bcode"></td>
-                <td id="Basmcode"></td>
-            </tr>
+        <table>
+            <tbody id="B">
+                <tr>
+                    <th>対応文字</th>
+                    <th>内部番号</th>
+                    <th>ポケモン</th>
+                    <th>わざ</th>
+                    <th>どうぐ</th>
+                    <th>マップ</th>
+                    <th>プログラム</th>
+                    <th>2Byte命令</th>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="0CHARINPUT" placeholder="検索文字を入力"></td>
+                    <td id="0Bnum"></td>
+                    <td id="0Bpokemon"></td>
+                    <td id="0Bskill"></td>
+                    <td id="0Bitem"></td>
+                    <td id="0Bmap"></td>
+                    <td id="0Bcode"></td>
+                    <td id="0Basmcode"></td>
+                </tr>
+            </tbody>
         </table>
+        <input type="button" value="Add" onclick="AddListB()">
         <script src="./index.js"></script>
     </body>
 </html>
